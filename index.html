@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Vortex - The Cosmic Downloader</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>The Video Vortex 🌀</h1>
+            <p>Suck in those videos, space cadet!</p>
+            <div class="floating-planet"></div>
+        </div>
+    </header>
+
+    <section class="download-section">
+        <div class="container">
+            <div class="download-box">
+                <h2>Beam Down Your Media</h2>
+                <form method="POST" action="/" class="download-form">
+                    <input type="text" name="url" placeholder="Enter Cosmic URL" class="url-input" required>
+                    <button type="submit" class="download-button">Engage Warp Drive 🚀</button>
+                </form>
+
+                {% if error %}
+                    <p class="error-message">{{ error }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2>Galactic Features 🌌</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5 5-5-5M12 12V0'/%3E%3C/svg%3E" alt="Warp Speed" class="feature-icon">
+                    <h3>Warp Speed Downloads</h3>
+                    <p>Faster than a comet's tail!</p>
+                </div>
+                <div class="feature">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5-10-5'/%3E%3C/svg%3E" alt="Stellar Quality" class="feature-icon">
+                    <h3>Stellar Quality</h3>
+                    <p>Videos sharper than a supernova!</p>
+                </div>
+                <div class="feature">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M15 15l-6-6M12 17v-5'/%3E%3C/svg%3E" alt="Alien Tech" class="feature-icon">
+                    <h3>Alien Tech Simplicity</h3>
+                    <p>So easy, even a space slug could use it!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Video Vortex - Made by M13 ✨</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add some fun JavaScript here for extra flair
+        document.addEventListener('DOMContentLoaded', function() {
+            const planet = document.querySelector('.floating-planet');
+            if (planet) {
+                planet.style.animation = `rotatePlanet ${Math.random() * 10 + 5}s infinite linear`;
+            }
+        });
+    </script>
+</body>
+</html>
