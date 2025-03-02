@@ -72,12 +72,11 @@ VideoVortex is a web application built with Flask and `yt-dlp` that allows users
 * yt-dlp
 
 
+<img width="880" alt="vortex3" src="https://github.com/user-attachments/assets/6edfcb02-78a5-4122-99af-fcdc9788ac85" />
 
 <img width="857" alt="vortex" src="https://github.com/user-attachments/assets/e63d3ffc-d92b-4d7d-b447-33840d1e9cde" />
 
 <img width="740" alt="vortex2" src="https://github.com/user-attachments/assets/4b9f7c2e-9eda-43b8-9480-e971c6893bd4" />
-
-<img width="880" alt="vortex3" src="https://github.com/user-attachments/assets/6edfcb02-78a5-4122-99af-fcdc9788ac85" />
 
 <img width="899" alt="vortex4" src="https://github.com/user-attachments/assets/0b1df360-d121-4591-8d07-9f49a5ac9f15" />
 
